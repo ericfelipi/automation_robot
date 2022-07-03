@@ -36,7 +36,7 @@ Escrever senha registro
 Selecionar Tipo
     [Arguments]         ${type}
     Click Element       ${account_type}
-    ${account_types}=   Get WebElement  xpath://li[text()="Agent"]
+    ${account_types}=   Get WebElement      xpath://li[text()="Agent"]
     Click Element       ${account_types}
 
 Clicar botão registrar

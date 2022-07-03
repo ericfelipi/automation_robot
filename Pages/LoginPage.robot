@@ -22,6 +22,9 @@ Clicar botão login
 
 Verificar label regitro com sucesso
     Location Should Be    https://www.phptravels.net/login/signup
+
+Verificar label login com email inexistente
+    Location Should Be    https://www.phptravels.net/login/failed
     
 #Funcionalidade
 Realize login   
@@ -42,5 +45,10 @@ Logar com login e senha corretos
 Deve ser redirecionado para a tela de usuário  
     Verificar label Account
     
+Logar com email inexistente
+    Realize login       invalido@hotmail.com   demouser
+
+Deve ser redirecionado para a tela de login com falha
+    Verificar label login com email inexistente
 
     

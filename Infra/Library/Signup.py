@@ -1,5 +1,4 @@
 import random
-import re   
 
 class Signup():
 
@@ -18,10 +17,8 @@ class Signup():
         
         nome = self.sortear_nome()
         name = nome.lower()
-        #name = re.sub("(?i)[^0-9a-záéíóúàèìòùâêîôûãõç\\s]","[^a-z]",name)    / resolver esses regex
         sobrenome = self.sortear_sobrenome()
         lastname = sobrenome.lower()
-        #lastname = re.sub("(?i)[^0-9a-záéíóúàèìòùâêîôûãõç\\s]","[^a-z]",lastname)
         email = random.choice(emails)
 
         email_return = (name + lastname + '@'+email+'.com')

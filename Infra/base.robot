@@ -9,9 +9,9 @@ Library     Library/Signup.py
 
 *** Keywords ***
 Open Session
-    ${base_url}=     Pegar Valor Json    base_url   
-    ${browser}=      Pegar valor Json    browser
-    Open Browser    ${base_url}     ${browser}
+    ${base_url}=     Pegar Valor Json       base_url   
+    ${browser}=      Pegar valor Json       browser
+    Open Browser     ${base_url}lang-en     ${browser}
     Get Selenium speed 
     Maximize Browser Window    
 

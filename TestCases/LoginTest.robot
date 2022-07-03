@@ -11,6 +11,12 @@ Realizar login com sucesso
     Logar com login e senha corretos
     Deve ser redirecionado para a tela de usuário
 
+Realizar login com email inexistente
+    [Tags]  login   loginFalha
+    Acessar o site principal
+    Logar com email inexistente
+    Deve ser redirecionado para a tela de login com falha
+
 
 
 
